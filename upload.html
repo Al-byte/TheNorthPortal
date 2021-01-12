@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./index.js">
+    </script>
+  <title> MyRedFolder® | Upload</title>
+</head>
+<body id="scroll-top" class="profile-body">
+  <div id="wrapper">
+    <div class="overlay"></div>
+     
+         <!-- Sidebar -->
+     <nav class="navbar navbar-inverse fixed-top mobile" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <div class="sidebar-header">
+        <div class="sidebar-brand mb-2">
+          <a href="./dashboard.html"><img src="./resources/css/logo.png" class="w-100" alt=""></a>
+        </div>
+      </div>
+        <li><a href="./dashboard.html"> <i class="fa fa-angle-double-right"></i> DASHBOARD</a></li>
+        <li><a href="./my_documents.html"> <i class="fa fa-angle-double-right"></i> MYREDFOLDER®</a></li>
+        <li><a href="./upload.html" class="active"> <i class="fa fa-angle-double-right"></i> UPLOAD</a></li>
+        <li><a href="./forms.html"> <i class="fa fa-angle-double-right"></i> FORMS</a></li>
+        <li><a href="./settings.html"> <i class="fa fa-angle-double-right"></i> SETTINGS</a></li>
+        <li><a href="./index.html"> <button class="sign-out-btn btn">LOG OUT <i class="fa fa-chevron-down ml-1"></i> </button></a>
+        <li><a href="./index.html" class="hide">FOLLOW US</a></li>
+        
+        <li class="dropdown hide">
+        <a href="#works" class="dropdown-toggle"  data-toggle="dropdown">Works <span class="caret"></span></a>
+      <ul class="dropdown-menu animated fadeInLeft hide" role="menu">
+       <div class="dropdown-header">Dropdown heading</div>
+       <li><a href="#pictures">Pictures</a></li>
+       <li><a href="#videos">Videeos</a></li>
+       <li><a href="#books">Books</a></li>
+       <li><a href="#art">Art</a></li>
+       <li><a href="#awards">Awards</a></li>
+       </ul>
+       </li>
+       
+       
+       </ul>
+    </nav>
+         <!-- /#sidebar-wrapper -->
+ 
+
+         <!--<Mobile nav toggler>-->
+         <div id="page-content-wrapper">
+           <div class="mobile-nav sticky-top mobile">
+             <div class="row">
+               <div class="col">
+                <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                  <span class="hamb-top"></span>
+                  <span class="hamb-middle"></span>
+                  <span class="hamb-bottom"></span>
+                </button>
+               </div>
+               <div class="col mobile-logo mr-3">
+                  <a href="./dashboard.html"><img src="./resources/css/logo.png" class="w-100" alt=""></a>
+              </div>
+             </div>
+             
+            </div>
+         
+            <div class="container">
+              <!--<Web nav>-->
+              <div class="row profile-nav d-flex align-items-center web sticky-top">
+                <div class="col text-center profile-nav-item py-2" id="profile-nav-home">
+                  <a href="./dashboard.html" id="profile-nav-home-a">
+                    <i class="fa fa-home py-2"></i>
+                    <p>Dashboard</p>
+                  </a>
+                </div>
+                <div class="col text-center profile-nav-item py-2" id="profile-nav-docs">
+                  <a href="./my_documents.html" id="profile-nav-docs-a">
+                    <i class="fa fa-folder-open py-2"></i>
+                    <p>MyRedFolder®</p>
+                  </a>
+                </div>
+                <div class="col text-center profile-nav-item py-2 profile-active" id="profile-nav-ul">
+                  <a href="./upload.html" id="profile-nav-ul-a">
+                    <i class="fa fa-upload py-2 x"></i>
+                    <p>Upload</p>
+                  </a>
+                </div>
+                <div class="col text-center profile-nav-item py-2" id="profile-nav-help">
+                  <a href="./forms.html" id="profile-nav-help-a">
+                    <i class="fa fa-file py-2"></i>
+                    <p>Forms</p>
+                  </a>
+                </div>
+                <div class="col text-center profile-nav-item py-2" id="profile-nav-set">
+                  <a href="./settings.html" id="profile-nav-set-a">
+                    <i class="fa fa-cog py-2"></i>
+                    <p>Settings</p>
+                  </a>
+                </div>
+              </div>
+              
+              <!--</Web nav>-->
+
+    <!--<Page Content>-->
+      <div class="row">
+        <div class="col-12 col-md gallery-col py-3" id="scroll-top">
+          <div class="row align-items-center h-100">
+            <div class="col-12 col-sm-10 col-lg-9 mx-auto py-4">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                  <i class="fa fa-upload fa-4x mb-2"></i>
+                </div>
+              <div class="col-12 col-lg-8 mx-auto">
+                <h6 class="text-center">Upload documents to MyRedFolder</h6>
+                <form action="" class="row">
+                  <div class="col text-center py-3">
+                  <label for="folders" class="py-2">Where would you like to upload this document?</label>
+                  <select name="folders" id="folders" class="my-3">
+                    <option value=""></option>
+                    <option value="financial">Financial</option>
+                    <option value="lifePlanning">Life Planning</option>
+                    <option value="registrations">Registrations</option>
+                    <option value="assets">Assets</option>
+                    <option value="businesses">Businesses</option>
+                  </select>
+                  <input class="form-control form-control-sm" id="formFileSm" type="file" />
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-12 text-center my-2">
+                <a href="">
+                <input type="submit" class="btn btn-success">
+                </a>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mx-auto mt-4">
+                <img src="./resources/css/logo.png" alt="" class="w-100">
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+    </div>
+<!--<Page Content>-->
+          </div>
+          <!--<Footer>-->
+            <footer class="row d-flex justify-content-center">
+              <div class="col-12 col-lg-9 col-xl-8">
+                <div class="row footer-nav text-center">
+                  <div class="col nav-item">
+                    <a href="./products.html">PRODUCTS</a>
+                  </div>
+                  <div class="col nav-item">
+                    <a href="./preparedness.html">PREPAREDNESS</a>
+                  </div>
+                  <div class="col nav-item">
+                    <a href="./our_story.html">OUR STORY</a>
+                  </div>
+                  <div class="col nav-item">
+                    <a href="./faqs.html">FAQs</a>
+                  </div>
+                  <div class="col nav-item">
+                    <a href="./contact_us.html">CONTACT US</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 text-center">
+                <p>Developed by the National Emergency Planning and Training Association</p>
+              </div>
+              <div class="col-8 text-center">
+                <p> &#169; 2020 NEPTA Family. All Rights Reserved.</p>
+              </div>
+              <div class="col-8 text-center">
+                <p><a href="terms">Terms and Conditions</a> | <a href="./privacy.html">Privacy Policy</a></p>
+              </div> 
+            </footer>
+            <!--</Footer>-->
+      </div>
+         <!-- /#page-content-wrapper -->
+ 
+     </div>
+     <!-- /#wrapper -->
+  
+            
+
+</body>
+</html>

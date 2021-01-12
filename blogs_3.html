@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./index.js">
+    </script>
+  <title> MyRedFolder® | ChangeTitle</title>
+</head>
+<body id="scroll-top" class="profile-body">
+  <div id="wrapper">
+    <div class="overlay"></div>
+     
+         <!-- Sidebar -->
+     <nav class="navbar navbar-inverse fixed-top mobile" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <div class="sidebar-header">
+        <div class="sidebar-brand mb-2">
+          <a href="./dashboard.html"><img src="./resources/css/logo.png" class="w-100" alt=""></a>
+        </div>
+      </div>
+        <li><a href="./dashboard.html" class="active"> <i class="fa fa-angle-double-right"></i> DASHBOARD</a></li>
+        <li><a href="./my_documents.html"> <i class="fa fa-angle-double-right"></i> MYREDFOLDER®</a></li>
+        <li><a href="./upload.html"> <i class="fa fa-angle-double-right"></i> UPLOAD</a></li>
+        <li><a href="./forms.html"> <i class="fa fa-angle-double-right"></i> FORMS</a></li>
+        <li><a href="./settings.html"> <i class="fa fa-angle-double-right"></i> SETTINGS</a></li>
+        <li><a href="./index.html"> <button class="sign-out-btn btn">LOG OUT <i class="fa fa-chevron-down ml-1"></i> </button></a>
+        <li><a href="./index.html" class="hide">FOLLOW US</a></li>
+        
+        <li class="dropdown hide">
+        <a href="#works" class="dropdown-toggle"  data-toggle="dropdown">Works <span class="caret"></span></a>
+      <ul class="dropdown-menu animated fadeInLeft hide" role="menu">
+       <div class="dropdown-header">Dropdown heading</div>
+       <li><a href="#pictures">Pictures</a></li>
+       <li><a href="#videos">Videeos</a></li>
+       <li><a href="#books">Books</a></li>
+       <li><a href="#art">Art</a></li>
+       <li><a href="#awards">Awards</a></li>
+       </ul>
+       </li>
+       
+       
+       </ul>
+    </nav>
+         <!-- /#sidebar-wrapper -->
+ 
+
+         <!--<Mobile nav toggler>-->
+         <div id="page-content-wrapper">
+           <div class="mobile-nav sticky-top mobile">
+             <div class="row">
+               <div class="col">
+                <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                  <span class="hamb-top"></span>
+                  <span class="hamb-middle"></span>
+                  <span class="hamb-bottom"></span>
+                </button>
+               </div>
+               <div class="col mobile-logo mr-3">
+                  <a href="./dashboard.html"><img src="./resources/css/logo.png" class="w-100" alt=""></a>
+              </div>
+             </div>
+             
+            </div>
+         
+            <div class="container">
+              <!--<Web nav>-->
+              <div class="row profile-nav d-flex align-items-center web sticky-top">
+                <div class="col text-center profile-nav-item py-2 profile-active" id="profile-nav-home">
+                  <a href="./dashboard.html" id="profile-nav-home-a">
+                    <i class="fa fa-home py-2"></i>
+                    <p>Dashboard</p>
+                  </a>
+                </div>
+                <div class="col text-center profile-nav-item py-2" id="profile-nav-docs">
+                  <a href="./my_documents.html" id="profile-nav-docs-a">
+                    <i class="fa fa-folder-open py-2"></i>
+                    <p>MyRedFolder®</p>
+                  </a>
+                </div>
+                <div class="col text-center profile-nav-item py-2" id="profile-nav-ul">
+                  <a href="./upload.html" id="profile-nav-ul-a">
+                    <i class="fa fa-upload py-2 x"></i>
+                    <p>Upload</p>
+                  </a>
+                </div>
+                <div class="col text-center profile-nav-item py-2" id="profile-nav-help">
+                  <a href="./forms.html" id="profile-nav-help-a">
+                    <i class="fa fa-file py-2"></i>
+                    <p>Forms</p>
+                  </a>
+                </div>
+                <div class="col text-center profile-nav-item py-2" id="profile-nav-set">
+                  <a href="./settings.html" id="profile-nav-set-a">
+                    <i class="fa fa-cog py-2"></i>
+                    <p>Settings</p>
+                  </a>
+                </div>
+              </div>
+              
+              <!--</Web nav>-->
+
+              <!--<Page Content>-->
+				<div class="row">
+				<div class="col-12 gallery-col mx-auto py-3">
+					<div class="row d-flex justify-content-center">
+					<div class="col-11">
+						<div class="row d-flex justify-content-center">
+						<div class="col-12 mx-auto">
+								<div class="row blogs">
+									<div class="col-12 text-center">
+										<h1 class="my-4">Blogs</h1>
+									</div>
+									<div class="col-11 col-md-3 embed-responsive embed-responsive-1by1 my-3 mx-auto">
+										<a href="./blog_example.html">
+											<img src="./resources/css/blog13.jfif" alt="" class="embed-responsive-item w-100">	
+										</a>
+									</div>
+									<div class="col-12 col-md-9 col-lg-3 mt-3 mx-auto">
+										<a href="blog_example.html" class="blogs-link">
+											<h4>Blog Title</h4>
+											<h6>Blog Author</h6>
+										</a>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										Esse cum quibusdam praesentium delectus voluptatum odit 
+										numquam quas fugit quam rem?</p>
+									</div>
+									<div class="col-11 col-md-3 embed-responsive embed-responsive-1by1 my-3 mx-auto">
+										<a href="./blog_example.html">
+											<img src="./resources/css/blog14.jfif" alt="" class="embed-responsive-item w-100">
+										</a>
+									</div>
+								<div class="col-12 col-md-9 col-lg-3 mt-3 mx-auto">
+									<a href="blog_example.html" class="blogs-link">  
+										<h4>Blog Title</h4>
+										<h6>Blog Author</h6>
+									</a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+									Esse cum quibusdam praesentium delectus voluptatum odit 
+									numquam quas fugit quam rem?</p>
+								</div>
+								<div class="col-11 col-md-3 embed-responsive embed-responsive-1by1 my-3 mx-auto">
+									<a href="./blog_example.html">
+										<img src="./resources/css/blog15.jfif" alt="" class="embed-responsive-item w-100">	
+									</a>
+								</div>
+								<div class="col-12 col-md-9 col-lg-3 mt-3 mx-auto">
+									<a href="blog_example.html" class="blogs-link">  
+										<h4>Blog Title</h4>
+										<h6>Blog Author</h6>
+									</a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+									Esse cum quibusdam praesentium delectus voluptatum odit 
+									numquam quas fugit quam rem?</p>
+								</div>
+								<div class="col-11 col-md-3 embed-responsive embed-responsive-1by1 my-3 mx-auto">
+									<a href="./blog_example.html">
+										<img src="./resources/css/blog16.jfif" alt="" class="embed-responsive-item w-100">	
+									</a>
+								</div>
+								<div class="col-12 col-md-9 col-lg-3 mt-3 mx-auto">
+									<a href="blog_example.html" class="blogs-link">  
+										<h4>Blog Title</h4>
+										<h6>Blog Author</h6>
+									</a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+									Esse cum quibusdam praesentium delectus voluptatum odit 
+									numquam quas fugit quam rem?</p>
+								</div>
+									
+									<div class="col-11 col-md-3 embed-responsive embed-responsive-1by1 my-3 mx-auto">
+										<a href="./blog_example.html">
+											<img src="./resources/css/blog17.jfif" alt="" class="embed-responsive-item w-100">	
+										</a>
+									</div>
+									<div class="col-12 col-md-9 col-lg-3 mt-3 mx-auto">
+										<a href="blog_example.html" class="blogs-link">
+											<h4>Blog Title</h4>
+											<h6>Blog Author</h6>
+										</a>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										Esse cum quibusdam praesentium delectus voluptatum odit 
+										numquam quas fugit quam rem?</p>
+									</div>
+									<div class="col-11 col-md-3 embed-responsive embed-responsive-1by1 my-3 mx-auto">
+										<a href="./blog_example.html">
+											<img src="./resources/css/blog18.jfif" alt="" class="embed-responsive-item w-100">	
+										</a>
+									</div>
+									<div class="col-12 col-md-9 col-lg-3 mt-3 mx-auto">
+										<a href="blog_example.html" class="blogs-link">
+											<h4>Blog Title</h4>
+											<h6>Blog Author</h6>
+										</a>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+										Esse cum quibusdam praesentium delectus voluptatum odit 
+										numquam quas fugit quam rem?</p>
+									</div>
+
+									
+									<div class="col-12 my-4">
+                                        <nav aria-label="...">
+                                            <ul class="pagination justify-content-center">
+                                              <li class="page-item">
+                                                <a class="page-link" href="./blogs_2.html">Previous</a>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="./blogs_1.html">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="./blogs_2.html">2</a></li>
+                                              <li class="page-item"><a class="page-link active-pagination" href="./blogs_3.html">3</a></li>
+                                              <li class="page-item disabled">
+                                                <a class="page-link" href="./blogs_4.html">Next</a>
+                                              </li>
+                                            </ul>
+                                        </nav>    
+                                    </div>
+								</div>
+								
+							</div>
+				
+						</div>        
+					</div>
+					</div>
+				</div>
+				<!--<Scroll to top>-->
+					<div class="col-12 top-div text-center mx-auto">
+						<a href="#scroll-top" class="smoothScroll" id="top-icon">Back to Top</a>
+					  </div>
+					<!--<Scroll to top>-->
+				</div>
+				<!--<Page Content>-->
+				</div>
+          <!--<Footer>-->
+			<footer class="row d-flex justify-content-center">
+				<div class="col-12 col-lg-9 col-xl-8">
+				  <div class="row footer-nav text-center">
+					<div class="col nav-item">
+					  <a href="./products.html">PRODUCTS</a>
+					</div>
+					<div class="col nav-item">
+					  <a href="./preparedness.html">PREPAREDNESS</a>
+					</div>
+					<div class="col nav-item">
+					  <a href="./our_story.html">OUR STORY</a>
+					</div>
+					<div class="col nav-item">
+					  <a href="./faqs.html">FAQs</a>
+					</div>
+					<div class="col nav-item">
+					  <a href="./contact_us.html">CONTACT US</a>
+					</div>
+				  </div>
+				</div>
+				<div class="col-8 text-center">
+				  <p>Developed by the National Emergency Planning and Training Association</p>
+				</div>
+				<div class="col-8 text-center">
+				  <p> &#169; 2020 NEPTA Family. All Rights Reserved.</p>
+				</div>
+				<div class="col-8 text-center">
+				  <p><a href="terms">Terms and Conditions</a> | <a href="./privacy.html">Privacy Policy</a></p>
+				</div> 
+			  </footer>
+			  <!--</Footer>-->
+			</div>
+				<!-- /#page-content-wrapper -->
+		
+     </div>
+     <!-- /#wrapper -->
+  
+            
+
+</body>
+</html>
