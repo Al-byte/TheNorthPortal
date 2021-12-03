@@ -1,85 +1,106 @@
-$("#form-bio").click(function(){
-    $("#form-bio-body").removeClass("hide");
-    $("#form-eap-body").addClass("hide");
-    $("#form-ek-body").addClass("hide");
-    $("#form-pi-body").addClass("hide");
-    $("#form-sar-body").addClass("hide");
-    $("#form-daf-body").addClass("hide");
-    $("#form-bio-div").addClass("mrf-active");
-    $("#form-eap-div").removeClass("mrf-active");
-    $("#form-ek-div").removeClass("mrf-active");
-    $("#form-pi-div").removeClass("mrf-active");
-    $("#form-sar-div").removeClass("mrf-active");
-    $("#form-daf-div").removeClass("mrf-active");
+$(document).ready(function() {    
+    
+  $(document).scroll(function () {
+      var y = $(this).scrollTop();
+      if (y > 750) {
+          $('.bottomMenu').fadeIn();
+      } else {
+          $('.bottomMenu').fadeOut();
+      }
+  
   });
 
-  $("#form-eap").click(function(){
-    $("#form-eap-body").removeClass("hide");
-    $("#form-bio-body").addClass("hide");
-    $("#form-ek-body").addClass("hide");
-    $("#form-pi-body").addClass("hide");
-    $("#form-sar-body").addClass("hide");
-    $("#form-daf-body").addClass("hide");
-    $("#form-eap-div").addClass("mrf-active");
-    $("#form-bio-div").removeClass("mrf-active");
-    $("#form-ek-div").removeClass("mrf-active");
-    $("#form-pi-div").removeClass("mrf-active");
-    $("#form-sar-div").removeClass("mrf-active");
-    $("#form-daf-div").removeClass("mrf-active");
+  $("#work-btn").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#shop").position().top-50
+          }, 1000);
+  });
+  $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+      $('#nav-icon').toggleClass('open');        
+  });
+  $('#nav-icon').click(function(){
+  $(this).toggleClass('open');
+});
+
+  $('.list-group>a').on('click', function(){
+      $('#wrapper').toggleClass('toggled');
+
+  });
+ 
+  $("#nav-home").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#home").position().top-50
+          }, 1000);
+  });
+  $("#nav-shop").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#shop").position().top-50
+          }, 1000);
+  });
+  $("#nav-reviews").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#reviews").position().top-0
+          }, 1000);
+  });
+  $("#nav-about").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#about").position().top-100
+          }, 1000);
+  });
+  $("#nav-mission").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#mission").position().top-20
+          }, 1000);
+  });
+  $("#nav-contact").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#contact").position().top-70
+          }, 1000);
+  });
+ 
+
+  $("side-home").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#home").position().top-50
+          }, 1000);
+  });
+  $("side-shop").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#shop").position().top-50
+          }, 1000);
+  });
+  $("side-reviews").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#reviews").position().top-0
+          }, 1000);
+  });
+  $("side-about").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#about").position().top-100
+          }, 1000);
+  });
+  $("side-mission").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#mission").position().top-20
+          }, 1000);
+  });
+  $("side-contact").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#contact").position().top-70
+          }, 1000);
   });
 
-  $("#form-ek").click(function(){
-    $("#form-ek-body").removeClass("hide");
-    $("#form-bio-body").addClass("hide");
-    $("#form-eap-body").addClass("hide");
-    $("#form-pi-body").addClass("hide");
-    $("#form-sar-body").addClass("hide");
-    $("#form-daf-body").addClass("hide");
-    $("#form-ek-div").addClass("mrf-active");
-    $("#form-bio-div").removeClass("mrf-active");
-    $("#form-eap-div").removeClass("mrf-active");
-    $("#form-pi-div").removeClass("mrf-active");
-    $("#form-sar-div").removeClass("mrf-active");
-    $("#form-daf-div").removeClass("mrf-active");
+  $("#top-icon").click(function(){            
+      $('html, body').animate({
+              scrollTop: $("#home").position().top-0
+          }, 1000);
   });
+  $("#indexVideo").on('hidden.bs.modal', function (e) {
+      $("#indexVideo iframe").attr("src", $("#indexVideo iframe").attr("src"));
+    });
+  
+  
+})
 
-  $("#form-pi").click(function(){
-    $("#form-pi-body").removeClass("hide");
-    $("#form-bio-body").addClass("hide");
-    $("#form-ek-body").addClass("hide");
-    $("#form-eap-body").addClass("hide");
-    $("#form-sar-body").addClass("hide");
-    $("#form-daf-body").addClass("hide");
-    $("#form-pi-div").addClass("mrf-active");
-    $("#form-bio-div").removeClass("mrf-active");
-    $("#form-ek-div").removeClass("mrf-active");
-    $("#form-eap-div").removeClass("mrf-active");
-    $("#form-sar-div").removeClass("mrf-active");
-    $("#form-daf-div").removeClass("mrf-active");
-  });
 
-  $("#form-sar").click(function(){
-    $("#form-sar-body").removeClass("hide");
-    $("#form-bio-body").addClass("hide");
-    $("#form-ek-body").addClass("hide");
-    $("#form-pi-body").addClass("hide");
-    $("#form-eap-body").addClass("hide");
-    $("#form-sar-div").addClass("mrf-active");
-    $("#form-bio-div").removeClass("mrf-active");
-    $("#form-ek-div").removeClass("mrf-active");
-    $("#form-pi-div").removeClass("mrf-active");
-    $("#form-eap-div").removeClass("mrf-active");
-  });
-
-  $("#form-daf").click(function(){
-    $("#form-daf-body").removeClass("hide");
-    $("#form-bio-body").addClass("hide");
-    $("#form-ek-body").addClass("hide");
-    $("#form-pi-body").addClass("hide");
-    $("#form-eap-body").addClass("hide");
-    $("#form-daf-div").addClass("mrf-active");
-    $("#form-bio-div").removeClass("mrf-active");
-    $("#form-ek-div").removeClass("mrf-active");
-    $("#form-pi-div").removeClass("mrf-active");
-    $("#form-eap-div").removeClass("mrf-active");
-  });

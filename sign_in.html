@@ -19,7 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="./index.js">
     </script>
-  <title> MyRedFolder® | Sign In</title>
+  <title> The North Portal® | Sign In</title>
 </head>
 <body>
     <!--<Page Content>-->
@@ -27,39 +27,32 @@
             <div class="col-12">
                 <div class="container sign-in-container">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-10 col-md-6 mx-auto my-5">
-                            <a href="./index.html">
-                                <img src="./resources/css/logo.png" class="w-100" alt="">
-                            </a>
+                        <div class="col-10 col-md-6 mx-auto my-5 text-center">
+                          <img src="./resources/assets/MerryChristmas.gif" class="w-50" alt="">
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center">
-                        <div class="col-10 col-md-6 mx-auto">
+                        <form class="col-10 col-md-6 mx-auto">
                             <div class="row card py-4 sign-in-card">
-                                <div class="col-md-10 mx-auto">
-                                    <h6 class="text-center">Log in to MyRedFolder</h6>
-                                    <p class="">Login ID</p>
-                                    <input type="text" class="w-100 mb-3">
-                                    <p class="">Password</p>
-                                    <input type="text" class="w-100 mb-3">
+                                <div class="col-md-8 mx-auto">
+                                    <h6 class="text-center">Log in to your MyNorthPortal Account</h6>
+                                    
+                                    <input type="text" placeholder="Username" name="userid" class="w-100 my-4">
+                                    
+                                    <input type="password" placeholder="Password" name="pswrd" class="w-100 my-4">
                                 </div>
                                 <div class="row d-flex justify-content-center">
                                     <div class="col-md-12 text-center">
-                                        <a href="./dashboard.html">
-                                            <button class="btn btn-success  mb-3">Log In</button>
-                                        </a>
+                                      <input type="submit" onclick="check(this.form)" value="Login" class="btn btn-success  mb-3"/>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 text-center">
-                                        <a href="">Forgot login ID or password?</a>
-                                    </div>
-                                    <div class="col-md-12 text-center">
-                                        <a href="">New user?</a>
+                                        <button class="btn" onclick="loginhelp()">Forgot login ID or password?</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                          </form>
                     </div>
                 </div>
             </div>
@@ -68,7 +61,7 @@
     
           <!--<Footer>-->
             <footer class="row d-flex justify-content-center">
-              <div class="col-12 col-lg-9 col-xl-8">
+              <div class="col-12 col-lg-9 col-xl-8 hide">
                 <div class="row footer-nav text-center">
                   <div class="col nav-item">
                     <a href="./products.html">PRODUCTS</a>
@@ -87,16 +80,32 @@
                   </div>
                 </div>
               </div>
-              <div class="col-8 text-center">
-                <p>Developed by the National Emergency Planning and Training Association</p>
+              <div class="col-8 text-center mt-3">
+                <p>Developed by the North Pole Planning and Training Association</p>
               </div>
               <div class="col-8 text-center">
-                <p> &#169; 2020 NEPTA Family. All Rights Reserved.</p>
+                <p> &#169; 2021 Clause Family. All Rights Reserved.</p>
               </div>
-              <div class="col-8 text-center">
-                <p><a href="terms">Terms and Conditions</a> | <a href="./privacy.html">Privacy Policy</a></p>
-              </div> 
+              
             </footer>
             <!--</Footer>-->
+            <script language="javascript">
+              
+              function check(form)
+                {
+                  if(form.userid.value == "e.elfenheimer" && form.pswrd.value == "ThreatLevelMidnight")
+                    {
+                      window.open('./dashboard.html')
+                    }
+                    else 
+                    {
+                      alert("The username and password you entered are incorrect :-(")
+                    }
+                }
+
+                function loginhelp(form) {
+                    alert("Please refer to your account confirmation e-mail for further assistance.");
+                }
+            </script>
 </body>
 </html>
