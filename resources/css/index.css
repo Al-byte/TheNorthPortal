@@ -216,7 +216,6 @@ html { height: 100%; width: auto !important; overflow-x: hidden !important;}
 
 #page-content-wrapper {
     width: 100%;
-    padding-top: 70px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -1085,6 +1084,11 @@ footer p, footer a {
         display: none !important;
     }
 
+    .web-nav {
+      margin: 20px 0;
+      padding: 20px 0;
+    }
+
     .page-text-1 {
       font-size: 13px;
       font-size: 4.3vw;
@@ -1190,6 +1194,11 @@ footer p, footer a {
   .web .nav-item {
     color: black;
   }
+
+  .web-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
   .web .nav-item:hover {
     color: rgb(151, 28, 30);
